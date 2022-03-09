@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'echo "this is a Success !"; exit 2'
+                sh 'echo "this is a Success !"; exit 0'
             }
         }
      }
