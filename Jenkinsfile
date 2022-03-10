@@ -11,6 +11,11 @@ pipeline {
                 sh 'echo "this is a Success !"; exit 0'
             }
         }
+        stage('Sanity check') {
+            steps {
+                input "Does the staging environment look ok?"
+            }
+        }
      }
      post {
             always {
